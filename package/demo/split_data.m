@@ -1,15 +1,15 @@
 function [tr_fea,tr_label,val_fea,val_label,ts_fea,ts_label,tr_fea_all,tr_fea_unlabelled,tr_all_label] = split_data(fea,gnd,seed,tr_num,val_num,ts_num)
-% tr_idx ÑµÁ·¼¯ÓĞ±êÇ©Êı¾İµÄ±êºÅ
-% tr_fea ÑµÁ·¼¯ÓĞ±êÇ©µÄÊı¾İ
-% idx_unlabelled ÑµÁ·¼¯ÎŞ±êÇ©Êı¾İµÄ±êºÅ
-% tr_fea_unlabelled ÑµÁ·¼¯ÎŞ±êÇ©µÄÊı¾İ
-% val_idx ÑéÖ¤¼¯±êºÅ
-% val_fea ÑéÖ¤¼¯Êı¾İ
-% ts_idx ²âÊÔ¼¯±êºÅ
-% ts_fea ²âÊÔ¼¯Êı¾İ
-% idx_labelled Õû¸öÊı¾İ¼¯ÓĞ±êÇ©Êı¾İµÄ±êºÅ£¬ÓÉÈı²¿·Ö×é³É£¬idx_labelled = [tr_idx',val_idx',ts_idx']'
-% idx_all Õû¸öÊı¾İ¼¯ËùÓĞÊı¾İµÄ±êºÅ£¬ÓÉÁ½²¿·Ö×é³É£¬idx_all = [tr_idx',idx_unlabelled']'
-% tr_fea_all Õû¸öÑµÁ·¼¯ËùÓĞÊı¾İ
+% tr_idx: the label of labeled trainging data è®­ç»ƒé›†æœ‰æ ‡ç­¾æ•°æ®çš„æ ‡å·
+% tr_fea: labeled training data è®­ç»ƒé›†æœ‰æ ‡ç­¾çš„æ•°æ®
+% idx_unlabelled: the label of unlabeled trainging data è®­ç»ƒé›†æ— æ ‡ç­¾æ•°æ®çš„æ ‡å·
+% tr_fea_unlabelled: unlabeled training data è®­ç»ƒé›†æ— æ ‡ç­¾çš„æ•°æ®
+% val_idx: the label of validation data éªŒè¯é›†æ ‡å·
+% val_fea: validation data éªŒè¯é›†æ•°æ®
+% ts_idx: the label of testinging data æµ‹è¯•é›†æ ‡å·
+% ts_fea: testinging data æµ‹è¯•é›†æ•°æ®
+% idx_labelled: æ•´ä¸ªæ•°æ®é›†æœ‰æ ‡ç­¾æ•°æ®çš„æ ‡å·ï¼Œç”±ä¸‰éƒ¨åˆ†ç»„æˆï¼Œidx_labelled = [tr_idx',val_idx',ts_idx']'
+% idx_all: æ•´ä¸ªæ•°æ®é›†æ‰€æœ‰æ•°æ®çš„æ ‡å·ï¼Œç”±ä¸¤éƒ¨åˆ†ç»„æˆï¼Œidx_all = [tr_idx',idx_unlabelled']'
+% tr_fea_all: æ•´ä¸ªè®­ç»ƒé›†æ‰€æœ‰æ•°æ®
 
 tr_idx  = [];
 val_idx = [];
