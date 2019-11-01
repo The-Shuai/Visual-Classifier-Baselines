@@ -3,7 +3,7 @@ clc;
 options                      =     [];
 options. dataset             =     'USPS';  %	, PIE_32x32, AR_dataset, usps, MNIST
 options.tr_num               =     5;
-options.val_num              =     10;
+options.val_num              =     100;
 options.ts_num               =     0;
 options.tr_unlabelled_num    =     0;
 options.flag                 =     1;            % 1 represents validation; 2 represents testing
@@ -19,7 +19,6 @@ fea = double(fea);
 accuracy = zeros(1,8);
 
 
-%%%%%子空间方法
 %%SRC_ADMM
 %%% Kernel Parameters
 options.kernel.name          =     'linear';
@@ -34,7 +33,7 @@ for i = -4:1:-4
     options.method.param.alpha = 2^(i);   
     for j = 1:0.2:1
         options.method.param.rho = j;
-        % 为了保证收敛，要让rho>=gd
+        % 涓轰簡淇濊瘉鏀舵暃锛岃璁﹔ho>=gd
         for k = 0.5:0.5:0.5
             if k > options.method.param.rho
                 break;
