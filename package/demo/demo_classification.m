@@ -16,7 +16,7 @@ if size(fea,2) ~= length(gnd)
     fea = fea';
 end
 
-%%%%%%%训练集、测试集、验证集
+%%%%%%%traing data銆乼esting date銆乿alidation data
 [tr_fea,tr_label,val_fea,val_label,ts_fea,ts_label,tr_fea_all,tr_fea_unlabelled,tr_all_label]= split_data(fea,gnd,par.seed,par.tr_num,par.val_num,par.ts_num);
 tr_fea   =  tr_fea./(repmat(sqrt(sum(tr_fea.*tr_fea)), [size(tr_fea,1),1]));
 tr_fea_unlabelled =  tr_fea_unlabelled./(repmat(sqrt(sum(tr_fea_unlabelled.*tr_fea_unlabelled)), [size(tr_fea_unlabelled,1),1]));
