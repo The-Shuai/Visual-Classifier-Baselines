@@ -1,7 +1,7 @@
 clear;
 clc;
 options                      =     [];
-options. dataset             =     'YaleB_Gaussian_6';  %	, PIE_32x32, AR_dataset, usps, MNIST
+options. dataset             =     'YaleB_32x32';  %	, PIE_32x32, AR_dataset, usps, MNIST
 options.tr_num               =     5;
 options.val_num              =     10;
 options.ts_num               =     0;
