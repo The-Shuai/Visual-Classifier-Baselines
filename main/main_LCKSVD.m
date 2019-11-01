@@ -8,7 +8,7 @@ options.val_num              =     10;
 options.ts_num               =     0;
 options.tr_unlabelled_num    =     0;
 options.flag                 =     1;    % 1 represents validation; 2 represents testing
-options.seed                 =     1000; % 让seed=1000时，无论是在matlab还是python还是C中生成的随机数都一样，利于比较
+options.seed                 =     1000; % 
 
 addpath('../package/demo/');
 addpath('../package/classifier/');
@@ -22,7 +22,7 @@ datasetpath = ['../data/dataset/' options.dataset '.mat'];
 load(datasetpath);
 accuracy_save = zeros(7,1);
 
-%%LCKSVD方法
+%%LCKSVD
 %%% Kernel Parameters
 options.kernel.name          =     'linear';
 options.kernel.param.gamma   =     2^-2;
