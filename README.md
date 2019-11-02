@@ -1,5 +1,5 @@
 # Visual Classifier Baselines <br>
-This model include 7 basline methods some [datasets](https://pan.baidu.com/s/1zEDDzRB2Dbz_otDWUMflMQ).<br>
+This model include 7 basline methods and some [datasets](https://pan.baidu.com/s/1zEDDzRB2Dbz_otDWUMflMQ).<br>
 ## **1. Sparse Representation based Classifier (SRC)**
 IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI), 2008<br>
 https://www.ideals.illinois.edu/bitstream/handle/2142/103886/08-2203.pdf?sequence=2&isAllowed=y<br>
