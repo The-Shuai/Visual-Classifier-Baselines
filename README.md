@@ -31,3 +31,5 @@ Neurocomputing , 2016<br>
 https://dacemirror.sci-hub.se/journal-article/cd86b39431cd2ca2aa07e2e30a2ca51e/liu2016.pdf#view=FitH<br>
 The main functiona is **main_CSDL**
 
+## License
+Our code is released under MIT License (see LICENSE file for details).
