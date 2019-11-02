@@ -1,14 +1,13 @@
 # Visual Classifier Baselines <br>
 This model include 7 basline methods and some [datasets](https://pan.baidu.com/s/1zEDDzRB2Dbz_otDWUMflMQ).<br>
-## **1. Sparse Representation based Classifier (SRC)**
+## **1. Sparse Representation based Classifier ([SRC](https://www.ideals.illinois.edu/bitstream/handle/2142/103886/08-2203.pdf?sequence=2&isAllowed=y))**
 IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI), 2008<br>
-https://www.ideals.illinois.edu/bitstream/handle/2142/103886/08-2203.pdf?sequence=2&isAllowed=y<br>
 This method has been optimized by two approaches,<br>
 i) Alternating Direction Method of Multipliers (ADMM), the main functiona is **main_SRC_ADMM**<br>
 ii) Blockwise Coordinate Descent (BCD), the main functiona is **main_SRC**
-## **2. Collaborative Representation based Classifier (CRC)**
+## **2. Collaborative Representation based Classifier ([CRC](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.231.8008&rep=rep1&type=pdf))**
 IEEE International Conference on Computer Vision (ICCV), 2011<br>
-http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.231.8008&rep=rep1&type=pdf<br>
+
 The main functiona is **main_CRC**
 ## **3. Nonnegative Representation based Classifier (NRC)**
 Pattern Recognition (PR), 2019<br>
